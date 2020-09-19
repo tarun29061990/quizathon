@@ -8,10 +8,12 @@ const QuizView = (props) => {
     let [counter, setCounter] = useState(0);
     let [score, setScore] = useState(0);
     let [rewardText, setRewardText] = useState("");
+    let [correctAnswer, setCorrectAns] = useState("");
 
     useEffect(()=>{
         
         setRewardText("");
+        setCorrectAns("");
         setq(prev=>questions[counter]);
     },[counter])
 
@@ -20,9 +22,13 @@ const QuizView = (props) => {
     async function checkIfCorrect(optionId, domId){
         let ele  = document.getElementById(domId);
         let selectedItem = {};
+        let correctItem = {};
         qu.options.forEach((item, index) => {
             if(item.id === optionId){
                 selectedItem = item;
+            }
+            if(item.correct){
+                correctItem = item;
             }
         });
         let isCorrect = selectedItem.correct;
@@ -31,11 +37,13 @@ const QuizView = (props) => {
             ele.style.backgroundColor = 'green';
             setScore(prev=>prev+1);
             setRewardText("Awesome!! Correct Answer 😃")
+            
         }else{
             
             ele.style.backgroundColor = 'red';
             setScore(prev=>prev-1);
-            setRewardText("Aww!! Wrong Answer... No worrie Keep going 😊");
+            setRewardText("Aww!! Wrong Answer... No worries Keep going 😊");
+            setCorrectAns(`${correctItem.text}`);
         }
 
         await sleep(1000)
@@ -52,6 +60,9 @@ const QuizView = (props) => {
         <>
         <h1>Score: {score}</h1>  
         <p className="reward-text">{rewardText}</p>
+        <p className="reward-text">
+            {correctAnswer && <span>The Correct answer is <b>{correctAnswer}</b></span>}
+        </p>
         {
             qu&& 
                 <div key={qu.id} className="question" id={qu.id}>

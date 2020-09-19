@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Swal from "sweetalert2";
 
 const QuizView = (props) => {
     const questions = props.data;
@@ -24,7 +25,12 @@ const QuizView = (props) => {
             setCounter(i+1);
             setScore(prev=>prev+1);
         }else{
-            alert("wrong answer");
+            
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Wrong answer. Please Try again or share your score on Facebook 😊!'
+            })
         }
     };
 

@@ -25,6 +25,11 @@
   color: #61dafb;
 }
 
+.app-container{
+  margin:3em 0 0 0;
+  text-align: center;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -40,9 +45,6 @@
   flex-direction: column;
 }
 
-.container .fb-share-button{
-  margin: 3em 0 0 0;
-}
 .question{
   margin: 3em 0 0 0;
   width: 70%;

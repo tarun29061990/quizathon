@@ -46,9 +46,9 @@ const Main = ()=>{
     }else{
         
         return(
-            <div class="container">
+            <div className="container">
                 {questionbank && <QuizView data={questionbank.queryQuestion}></QuizView>}
-                <div class="fb-share-button" data-href="http://curioustechie.in" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcurioustechie.in%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+                
             </div>
         );
     }

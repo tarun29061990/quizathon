@@ -21,7 +21,9 @@ function App() {
        
         <ApolloProvider client={client}>
           <Main></Main>
-          
+          <div className="app-container">
+            <div class="fb-share-button" data-href="https://quiz-pi.vercel.app/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fquiz-pi.vercel.app%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+          </div>
         </ApolloProvider>
         
       </header>

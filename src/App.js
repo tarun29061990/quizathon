@@ -34,7 +34,9 @@ function App() {
         <p>Please Follow Quiz Khazana on <a target="_blank" href="https://www.instagram.com/quiz_khazana/"><img src={insta} /></a> and 
           <a target="_blank" href="https://www.facebook.com/quizkhazana"><img src={fb} /></a>
         </p>
-       
+       <p>
+         It's a <a href="http://curioustechie.in" target="_blank">Tarun Chaudhary</a> Production.
+         </p>
       </footer>
     </div>
   );

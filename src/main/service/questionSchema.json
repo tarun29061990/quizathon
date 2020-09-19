@@ -1,0 +1,88 @@
+[{
+    "title": "Who is the Prime minister of India?",
+    "img_src":"",
+    "options": [
+        {
+            "text": "Narendra Modi",
+            "correct": true
+        },
+        {
+            "text": "Ram nath Kovind",
+            "correct": false
+        },
+        {
+            "text": "Amit shah",
+            "correct": false
+        },
+        {
+            "text": "Sambit patra",
+            "correct": false
+        }
+    ]
+},
+{
+    "title": "What is the capital Of India?",
+    "img_src":"",
+    "options": [
+        {
+            "text": "Gujarat",
+            "correct": false
+        },
+        {
+            "text": "Delhi",
+            "correct": true
+        },
+        {
+            "text": "Madhya Pradesh",
+            "correct": false
+        },
+        {
+            "text": "Rajasthan",
+            "correct": false
+        }
+    ]
+},
+{
+    "title": "In what year did India became Independent?",
+
+    "options": [
+        {
+            "text": "1946",
+            "correct": false
+        },
+        {
+            "text": "1947",
+            "correct": true
+        },
+        {
+            "text": "1948",
+            "correct": false
+        },
+        {
+            "text": "1949",
+            "correct": false
+        }
+    ]
+},
+{
+    "title": "In what year did India became republic?",
+    "options": [
+        {
+            "text": "1950",
+            "correct": true
+        },
+        {
+            "text": "1947",
+            "correct": false
+        },
+        {
+            "text": "1948",
+            "correct": false
+        },
+        {
+            "text": "1949",
+            "correct": false
+        }
+    ]
+}
+]
